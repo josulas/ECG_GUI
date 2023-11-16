@@ -1,0 +1,8 @@
+# FILEPATH: /c:/Users/Josue/Desktop/PSB/TPs/TP2/ECG/gitignore.git
+__pycache__/
+main.build/
+main.dist/
+saved_ecg/
+tests/
+main.onefile-build/
+venv/

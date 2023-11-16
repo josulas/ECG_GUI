@@ -1,8 +1,0 @@
-# FILEPATH: /c:/Users/Josue/Desktop/PSB/TPs/TP2/ECG/gitignore.git
-_pycache_/
-main.build/
-main.dist/
-saved_ecg/
-tests/
-communication_simulation.py
-main.onefile-build/

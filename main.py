@@ -181,6 +181,7 @@ class Widget(QWidget):
         if self.ui.toggle_recording_button.isChecked():
             self.save_data_file = open(self.get_file_name(), 'w')
             # Write metadata with comments
+            self.save_data_file.write('# Sampling rate: {}\n'.format(SAMPLING_RATE))
             self.save_data_file.write('# Date: {}\n'.format(QtCore.QDateTime.currentDateTime().toString('dd/MM/yyyy hh:mm:ss')))
             self.save_data_file.write('# Patient name: {}\n'.format(self.patient_name if self.patient_name else '-'))
             self.save_data_file.write('# Patient age: {}\n'.format(self.patient_age if self.patient_age else '-'))
